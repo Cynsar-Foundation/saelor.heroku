@@ -1,0 +1,10 @@
+#!/bin/sh
+
+BUILD_DIR=$1
+
+# Check and load the GOOGLE_CREDENTIALS variable, then write to a file
+if [ -n "$GOOGLE_CREDENTIALS" ]; then
+    echo $GOOGLE_CREDENTIALS > $BUILD_DIR/google-credentials.json
+fi
+
+# You can add other build commands here if needed
