@@ -2,6 +2,6 @@
 
 echo "---"
 echo "default_process_types:"
-echo "  release: python manage.py migrate --no-input"
-echo "  web: gunicorn --bind :$PORT --workers 4 --worker-class saleor.asgi.gunicorn_worker.UvicornWorker saleor.asgi:application"
-echo "  celeryworker: celery -A saleor --app=saleor.celeryconf:app worker --loglevel=info -E --concurrency ${CELERY_CONCURRENCY:-2}"
+echo "  release: 'python manage.py migrate --no-input'"
+echo "  web: 'gunicorn --bind :"$PORT" --workers 4 --worker-class saleor.asgi.gunicorn_worker.UvicornWorker saleor.asgi:application'"
+echo "  celeryworker: 'celery -A saleor --app=saleor.celeryconf:app worker --loglevel=info -E --concurrency "${CELERY_CONCURRENCY:-2}"'"
