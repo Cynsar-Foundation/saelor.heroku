@@ -53,6 +53,3 @@ The main logic of this buildpack is encapsulated in the `bin/compile` script. It
 - It's generally recommended to use a `Procfile` for defining processes like web and worker commands. However, this buildpack provides an example of how it can be done directly within the buildpack for demonstration purposes.
 - Always ensure that sensitive information like Google credentials is managed securely.
 
----
-
-That's a simple README covering the process. Adjust as needed for clarity or additional details relevant to your audience. If you're hosting this on a platform like GitHub, consider using markdown styling for better readability.
